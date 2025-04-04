@@ -1,10 +1,11 @@
+import React from "react";
 import { Box, Button, Container, Paper, TextField, Typography } from '@mui/material';
 import { useForm } from 'react-hook-form';
 
-const ReservationForm = () => {
+const BookingForm = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
   
-  const onSubmit = (data) => {
+  const onSubmit = (data: any) => {
     alert(`Reservation made for ${data.name} at ${data.time}`);
   };
 
@@ -55,4 +56,4 @@ const ReservationForm = () => {
 };
 
 
-export default ReservationForm
+export default BookingForm
